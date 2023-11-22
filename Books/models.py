@@ -11,6 +11,7 @@ class Author(models.Model):
         verbose_name = "Автор"
         verbose_name_plural = "Авторы"
 
+
 class Books(models.Model):
     title = models.CharField(max_length=70)
     author = models.ManyToManyField
